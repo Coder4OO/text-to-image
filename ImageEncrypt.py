@@ -48,7 +48,7 @@ while running:
         txt = input("Enter message:")
         img = create_image(txt)
         pygame.image.save(img, "image"+str(len(listdir(getcwd())))+".png")
-        print("Image saved as %s" % "image"+str(len(listdir(getcwd())))+".png")
+        print("Image saved as %s" % "image"+str(len(listdir(getcwd()))-1)+".png")
     elif menu == "2":
         running = False
     else:
